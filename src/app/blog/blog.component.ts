@@ -9,7 +9,7 @@ export class BlogComponent implements OnInit {
   @Input() postLoveIts: number;  
   @Input() postTitle: string;
   @Input() postContent: string;
-   @Input() postCreatedAt: date;
+   @Input() postCreatedAt: Date;
 
   constructor() { }
 
@@ -18,9 +18,9 @@ export class BlogComponent implements OnInit {
 
 
   getColor() {
-    if(this.loveIts > 0 ) {
+    if(this.postLoveIts > 0 ) {
       return 'green';
-    } else if(this.loveIts < 0 ) {
+    } else if(this.postLoveIts < 0 ) {
       return 'red';
     }
   }

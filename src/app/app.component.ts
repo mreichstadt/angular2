@@ -10,7 +10,7 @@ import { PostService } from './services/post.service';
 export class AppComponent implements OnInit{
   title = 'Projet Blog Angular';
   isAuth = false;
-  lastUpdate = new Date('2018','10','08');
+  lastUpdate = new Date(2018,10,8);
 
   appareils: any[];
   posts: any[];
